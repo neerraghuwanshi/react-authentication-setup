@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.loginContainer, .signUpContainer {
+    width: calc(100vw - 40px);
+    min-height: 50px;
+    margin-top: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color, color .1s ease-in-out;
+}
+
+.loginContainer:hover .heading, .signUpContainer:hover .heading {
+    color: var(--secondaryColor);
+}
+
+.loginContainer {
+    border-color: var(--loginButtonColor);
+}
+
+.loginContainer:hover {
+    background-color: var(--loginButtonColor);
+}
+
+.loginContainer .heading {
+    color: var(--loginButtonColor);
+}
+
+.signUpContainer {
+    margin-bottom: 50px;
+    border-color: var(--signUpButtonColor);
+}
+
+.signUpContainer:hover {
+    background-color: var(--signUpButtonColor);
+}
+
+.signUpContainer .heading {
+    color: var(--signUpButtonColor);
+}
+
+.heading {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.lightFont {
+    font-weight: 400;
+}
+
+
+@media (min-width: 340px) {
+    .loginContainer, .signUpContainer {
+        width: 300px;
+        border-radius: 15px;
+    }
+    .heading {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 400px) {
+    .heading {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        min-height: calc(100vh - 60px);
+    }
+    .loginContainer, .signUpContainer {
+        width: 350px;
+        height: 60px;
+        margin-top: 60px;
+    }
+    .signUpContainer {
+        margin-bottom: 60px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        min-height: calc(100vh - 70px);
+    }
+    .loginContainer, .signUpContainer {
+        width: 400px;
+        height: 65px;
+        margin-top: 65px;
+    }
+    .signUpContainer {
+        margin-bottom: 65px;
+    }
+    .heading {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        min-height: calc(100vh - 80px);
+    }
+    .loginContainer, .signUpContainer {
+        width: 450px;
+        height: 70px;
+        margin-top: 70px;
+    }
+    .signUpContainer {
+        margin-bottom: 70px;
+    }
+    .heading {
+        font-size: 24px;
+    }
+}

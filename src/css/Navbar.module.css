@@ -1,0 +1,93 @@
+.container{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--primaryColor);
+}
+
+.ul{
+    width: 100vw;
+    height: 50px;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.linksContainer {
+    display: flex;
+}
+
+.link {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+.firstLink {
+    margin-left: 0px !important;
+}
+
+.link:hover, .activeLink {
+    cursor: pointer;
+    color: var(--navLinkColor);   
+}
+
+.logoutButton {
+    border-width: 0;
+    background-color: transparent;
+}
+
+.logoutButton:hover {
+    color: var(--dangerColor);
+}
+
+
+@media (min-width: 320px) {
+    .link {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 400px) {
+    .ul {
+        height: 60px;
+    }
+    .link {
+        margin-left: 20px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ul {
+        width: 768px;
+    }
+    .link {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ul {
+        height: 70px;
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ul {
+        height: 80px;
+        width: 1200px;
+    }
+    .link {
+        font-size: 19px;
+    }
+}

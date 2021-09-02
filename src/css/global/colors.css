@@ -1,0 +1,9 @@
+:root {
+    --primaryColor: black;
+    --secondaryColor: white;
+    --navLinkColor: rgb(0, 194, 253); 
+    --inputBorderColor: rgb(98, 98, 98);
+    --loginButtonColor: green;
+    --signUpButtonColor: blue;
+    --dangerColor: red;
+}
