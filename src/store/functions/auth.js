@@ -32,7 +32,6 @@ export const setInitialAuthState = () => {
             ))
         } 
         catch (error) {
-            console.log(error.message)
             dispatch(authLogout())
         }
     }
